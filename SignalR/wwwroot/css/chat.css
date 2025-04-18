@@ -1,0 +1,64 @@
+﻿#chatHistory {
+    list-style-type: none;
+    text-align: left;
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+#chatHistory li {
+    padding-bottom: 10px;
+}
+
+#chatHistory li .name {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+#chatHistory li .time {
+    color: #999;
+    font-size: 0.9em;
+}
+
+#chatHistory li .message {
+    padding-top: 5px;
+    word-wrap: break-word;
+}
+
+#chatConnectionInfo {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    padding-top: 100px;
+    color: darkred;
+    z-index: 2;
+    display: none;
+    text-align: center;
+}
+
+#chatDialog.disconnected #chatMainPanel {
+    filter: blur(2px);
+}
+
+#chatDialog.disconnected #chatConnectionInfo {
+    display: block;
+}
+
+#chatWelcomePanel {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    padding: 20px;
+    text-align: center;
+}
+
+#chatMainPanel {
+    padding: 10px;
+}
+
+#roomList .list-group-item {
+    cursor: pointer;
+}
